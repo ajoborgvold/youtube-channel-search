@@ -2,6 +2,8 @@ const apiKey = process.env.API_KEY
 const baseUrl = 'https://www.googleapis.com/youtube/v3/search?part=snippet'
 
 const handler = async (event) => {
+  console.log('api called from serverless function')
+
   const channelId = event.body.channelId
   const searchValue = event.body.searchValue
 

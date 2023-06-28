@@ -21,6 +21,8 @@ function ContextProvider({children}) {
     }
         
     async function searchForVideos(e) {
+        console.log('serverless function called')
+
         e.preventDefault()
 
         const url = 'https://frolicking-alpaca-235d75.netlify.app/.netlify/functions/callApi'

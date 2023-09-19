@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import channelData from '../data/channelData'
 
 const Context = React.createContext()
@@ -9,7 +9,11 @@ function ContextProvider({children}) {
     const [videosData, setVideosData] = useState([])
     const [errorMessage, setErrorMessage] = useState('')
     const [hasData, setHasData] = useState(false)
-        
+    
+    useEffect(() => {
+        searchForVideos()
+    }, [])
+
     const buttonClass = searchValue ? 'enabled' : 'disabled'
         
     function handleSelectChange(e) {
@@ -21,7 +25,7 @@ function ContextProvider({children}) {
     }
     
     function searchForVideos(e) {
-        e.preventDefault()
+        e && e.preventDefault()
         const URL = "https://tangerine-torte-2fd1e5.netlify.app/.netlify/functions/fetch-videos";
         
         fetch(URL, {

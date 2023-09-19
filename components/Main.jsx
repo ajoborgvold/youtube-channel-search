@@ -8,7 +8,7 @@ function Main() {
     
     return (
         <main>
-            <h2 className="main__subheading">Movies 2023</h2>
+            {/* <h2 className="main__subheading">Movies 2023</h2> */}
             <div className="video-container">
                 { hasData ? <SearchResults /> : <Error /> }
             </div>

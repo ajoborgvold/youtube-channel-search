@@ -5,7 +5,7 @@ const Context = React.createContext()
 
 function ContextProvider({children}) {
     const [channelId, setChannelId] = useState(channelData[0].id)
-    const [searchValue, setSearchValue] = useState('')
+    const [searchValue, setSearchValue] = useState('frontend')
     const [videosData, setVideosData] = useState([])
     const [errorMessage, setErrorMessage] = useState('')
     const [hasData, setHasData] = useState(false)

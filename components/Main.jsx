@@ -1,16 +1,19 @@
 import React, { useContext } from 'react'
-import { Context } from '../contextProvider/Context'
 import SearchResults from './SearchResults'
 import Error from './Error'
+import { Context } from '../contextProvider/Context'
 
 function Main() {
-    const { hasData } = useContext(Context)
-    
+    const { hasData, videosHeading, isLoading } = useContext(Context)
+
     return (
         <main>
-            {/* <h2 className="main__subheading">Movies 2023</h2> */}
+            <h2 className="main__subheading">{`${videosHeading.channel}: ${videosHeading.search}`}</h2>
             <div className="video-container">
-                { hasData ? <SearchResults /> : <Error /> }
+                {isLoading ?
+                    <p>Loading...</p> :
+                    hasData ? <SearchResults /> : <Error />
+                }
             </div>
         </main>
     )

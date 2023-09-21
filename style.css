@@ -36,6 +36,11 @@ h1 {
     color: #282828;
 }
 
+.loading-icon {
+    font-size: 2em;
+    margin: 2em auto 0;
+}
+
 .error {
     font-size: 1rem;
     font-weight: 500;

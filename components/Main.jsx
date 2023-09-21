@@ -1,5 +1,5 @@
 import { useContext } from 'react'
-import Videos from './Videos'
+import Video from './Video'
 import Error from './Error'
 import { Context } from '../contextProvider/Context'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -16,7 +16,7 @@ function Main() {
                     // <p className='error'>Loading...</p> :
                     // <FontAwesomeIcon icon="fa-solid fa-spinner" spinPulse style={{color: "#1b4965",}} /> :
                     <FontAwesomeIcon icon={faSpinner} className='loading-icon'/> :
-                    hasData ? <Videos /> : <Error />
+                    hasData ? <Video /> : <Error />
                 }
             </div>
         </main>

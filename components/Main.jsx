@@ -1,5 +1,5 @@
-import React, { useContext } from 'react'
-import SearchResults from './SearchResults'
+import { useContext } from 'react'
+import Videos from './Videos'
 import Error from './Error'
 import { Context } from '../contextProvider/Context'
 
@@ -12,7 +12,7 @@ function Main() {
             <div className="video-container">
                 {isLoading ?
                     <p>Loading...</p> :
-                    hasData ? <SearchResults /> : <Error />
+                    hasData ? <Videos /> : <Error />
                 }
             </div>
         </main>

@@ -13,8 +13,6 @@ function Main() {
             <h2 className="main__subheading">{`${videosHeading.channel}: ${videosHeading.search}`}</h2>
             <div className="video-container">
                 {isLoading ?
-                    // <p className='error'>Loading...</p> :
-                    // <FontAwesomeIcon icon="fa-solid fa-spinner" spinPulse style={{color: "#1b4965",}} /> :
                     <FontAwesomeIcon icon={faSpinner} className='loading-icon'/> :
                     hasData ? <Video /> : <Error />
                 }

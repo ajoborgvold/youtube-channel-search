@@ -39,6 +39,11 @@ h1 {
 .loading-icon {
     font-size: 2em;
     margin: 2em auto 0;
+    animation: rotate 1.25s linear infinite;
+}
+
+@keyframes rotate {
+    100% {transform: rotate(360deg)}
 }
 
 .error {

@@ -42,14 +42,3 @@ const channelData = [
 ]
 
 export default channelData
-
-                    // <option value="UCNW7HDseZb6N3nKUEP6uLag">Scrimba</option>
-                    // <option value="UCSJbGtTlrDami-tDGPUV9-w">Academind</option>
-                    // <option value="UC5DNytAJ6_FISueUfzZCVsw">Code with Ania Kubów</option>
-                    // <option value="UCxX9wt5FWQUAAz4UrysqK9A">CS Dojo</option>
-                    // <option value="UCwRXb5dUK4cvsHbx-rGzSgw">Derek Banas</option>
-                    // <option value="UC8butISFwT-Wl7EV0hUK0BQ">freeCodeCamp.org</option>
-                    // <option value="UCW5YeuERMmlnqo4oq8vwUpg">The Net Ninja</option>
-                    // <option value="UCJZv4d5rbIKd4QHMPkcABCw">Kevin Powell</option>
-                    // <option value="UCyU5wkjgQYGRB0hIHMwm2Sg">Syntax</option>
-                    // <option value="UC29ju8bIPH5as8OGnQzwJyA">Traversy Media</option>

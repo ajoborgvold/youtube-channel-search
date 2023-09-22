@@ -9,7 +9,7 @@ function Main() {
 
     return (
         <main>
-            <h2 className="main__subheading">{hasData ? `${videosHeading.channel}: ${videosHeading.search}` : null}</h2>
+            <h2 className="main__heading">{hasData ? `${videosHeading.channel}: ${videosHeading.search}` : null}</h2>
             <div className="video-container">
                 {isLoading ?
                     <ImSpinner3 className='loading-icon'/> :

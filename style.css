@@ -19,8 +19,8 @@ h1 {
     margin: 0;
 }
 
-.main__subheading {
-    font-size: 1.5rem;
+.main__heading {
+    font-size: 1.25rem;
     text-align: center;
 }
 
@@ -234,8 +234,8 @@ main {
         font-size: 2rem;
     }
     
-    .main__subheading {
-        font-size: 1.75rem;
+    .main__heading {
+        font-size: 1.5rem;
     }
     
     .video__title {
@@ -279,8 +279,8 @@ main {
         font-size: 1rem;
     }
     
-    .main__subheading {
-        font-size: 2rem;
+    .main__heading {
+        font-size: 1.75rem;
     }
     
 /* Layout */
@@ -313,8 +313,8 @@ main {
         font-size: 2.5rem;
     }
     
-    .main__subheading {
-        font-size: 2.25rem;
+    .main__heading {
+        font-size: 2rem;
     }
     
 /* Layout */

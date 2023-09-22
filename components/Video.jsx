@@ -36,6 +36,8 @@ function Video() {
                             src={item.snippet.thumbnails.medium.url}
                             className="thumbnail"
                             alt={description}
+                            width="16"
+                            height="9"
                         />
                         {hoveredItem === itemId && <i className="fa-solid fa-play play-movie"></i>}
                     </a>

@@ -197,6 +197,7 @@ main {
 
 .thumbnail {
     width: 100%;
+    height: auto;
     border: 1px solid #F7F9FB;
     border-radius: .3em;
 }

@@ -7,7 +7,7 @@ function Header() {
                 <i className="fa-solid fa-play"></i>
                 <h1>Channel <span className="light-blue">Search</span></h1>
             </div>
-            <h2 className="header__subheading">Seach for videos about programming from popular YouTube channels</h2>
+            <h2 className="header__subheading">Seach for videos about coding from popular YouTube channels</h2>
         </header>
     )
 }

@@ -109,6 +109,7 @@ input {
     color: #282828;
     padding: .65em;
     border: 2px solid #1B4965;
+    border-radius: 0px;
     -webkit-border-radius: 0px;
 }
 
@@ -118,6 +119,7 @@ select {
     color: #282828;
     padding: .65em 2em .65em .65em;
     border: 2px solid #1B4965;
+    border-radius: 0px;
     -moz-appearance: none;
     -webkit-appearance: none;
     -webkit-border-radius: 0px;

@@ -37,8 +37,10 @@ function Form() {
                     onChange={e => handleSearchFieldChange(e)}
                 />
                 <button
+                    onClick={e => searchForVideos(e)}
                     className={buttonClass}
-                    onClick={e => searchForVideos(e)}>
+                    aria-label='Search-button'
+                >
                     <i className="fa-solid fa-arrow-right"></i>
                 </button>
             </form>

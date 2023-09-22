@@ -11,12 +11,9 @@ function Main() {
         <main>
             <h2 className="main__subheading">{hasData ? `${videosHeading.channel}: ${videosHeading.search}` : null}</h2>
             <div className="video-container">
-                {/* {isLoading ?
+                {isLoading ?
                     <ImSpinner3 className='loading-icon'/> :
                     hasData ? <Video /> : <Error />
-                } */}
-                {!hasData ? <Error /> :
-                    isLoading ? <ImSpinner3 className='loading-icon'/> : <Video />
                 }
             </div>
         </main>

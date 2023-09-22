@@ -198,7 +198,6 @@ main {
 }
 
 .video-item {
-    /* height: 100%; */
     padding: 1em;
     border-radius: .3em;
     box-shadow: 0 0 2px #282828;
@@ -318,10 +317,5 @@ main {
     
     .main__heading {
         font-size: 2rem;
-    }
-    
-/* Layout */
-    .video-container {
-        /* gap: 2.5em; */
     }
 }

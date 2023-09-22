@@ -1,3 +1,12 @@
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+}
+
+
 body {
     font-family: 'Inter', sans-serif;
     background-color: #F7F9FB;
@@ -10,18 +19,19 @@ body {
 
 h1 {
     font-size: 1.75rem;
-    margin: 0;
 }
 
 .header__subheading {
     font-size: .875rem;
     font-weight: 400;
-    margin: 0;
 }
 
 .main__heading {
     font-size: 1.25rem;
-    text-align: center;
+    width: fit-content;
+    margin: 0 auto .5em;
+    padding: .25em .5em;
+    box-shadow: 0 0 5px #5FA8D3;
 }
 
 .video__title {
@@ -87,7 +97,7 @@ header {
 /* form */
 
 .form-container {
-    margin: 1em;
+    /* margin: 1em; */
 }
 
 form {
@@ -246,7 +256,7 @@ main {
     
 /* Layout */
     header {
-        margin: 3em 2em;
+        margin: 2em;
     }
     
     form {
@@ -264,10 +274,6 @@ main {
     input {grid-area: input;}
     select {grid-area: select;}
     button {grid-area: button;}
-    
-    main {
-        margin: 3em 1em 2em;
-    }
 }
 
 
@@ -283,13 +289,10 @@ main {
     
     .main__heading {
         font-size: 1.75rem;
+        margin-bottom: .75em;
     }
     
-/* Layout */
-    header {
-        margin: 4em;
-    }
-    
+/* Layout */   
     form {
         grid-template-areas: "select input button";
     }
@@ -301,7 +304,7 @@ main {
     }
     
     main {
-        margin: 4em 2em 2em;
+        margin: 3em 2em 2em;
     }
     
     .video-container {

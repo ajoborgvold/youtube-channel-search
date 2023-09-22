@@ -34,8 +34,10 @@ function ContextProvider({ children }) {
             channel: selectedChannel,
             search: selectedSearch
         })
-    }
 
+        setSearchValue('')
+    }
+    
     function searchForVideos(e) {
         e && e.preventDefault()
         setIsLoading(true)
@@ -53,6 +55,7 @@ function ContextProvider({ children }) {
             .then((res) => {
                 if (!res.ok) {
                     setHasData(false);
+                    setIsLoading(false);
                     console.log("res.ok === false");
                     setErrorMessage(
                         "The search engine is currently unavailable. Please try again later."
@@ -64,6 +67,7 @@ function ContextProvider({ children }) {
             .then((data) => {
                 if (!data) {
                     setHasData(false);
+                    setIsLoading(false);
                     console.log("No data found");
                     setErrorMessage(
                         "The search engine is currently unavailable. Please try again later."
@@ -71,6 +75,7 @@ function ContextProvider({ children }) {
                     return;
                 } else if (!data.items.length) {
                     setHasData(false);
+                    setIsLoading(false);
                     console.log("No data found");
                     setErrorMessage(
                         "Sorry, there are no videos matching your search. Please try another search."

@@ -4,7 +4,6 @@ import { Context } from '../contextProvider/Context'
 function Video() {
     const { videosData } = useContext(Context)
     const [hoveredItem, setHoveredItem] = useState(null)
-    console.log(hoveredItem)
     
     //--- Filter out channels from the videosData, keep only videos and playlists ---//
     const videosToDisplay = videosData.filter(item => !item.id.channelId)
@@ -23,15 +22,13 @@ function Video() {
 
         return (
             <div
-                key={itemId}
-                className="video-item"
-                onMouseEnter={() => setHoveredItem(itemId)}
-                onMouseLeave={() => setHoveredItem(null)}
-            >
-                <div className="image-wrapper">
-                    <a
-                        href={url}
-                        target="_blank">
+                    key={itemId}
+                    className="video-item"
+                    onMouseEnter={() => setHoveredItem(itemId)}
+                    onMouseLeave={() => setHoveredItem(null)}
+                >
+            <a href={url} target="_blank">
+                    <div className="image-wrapper">
                         <img
                             src={item.snippet.thumbnails.medium.url}
                             className="thumbnail"
@@ -40,13 +37,13 @@ function Video() {
                             height="9"
                         />
                         {hoveredItem === itemId && <i className="fa-solid fa-play play-movie"></i>}
-                    </a>
+                    </div>
+                    <h3
+                        className="video__title"
+                        dangerouslySetInnerHTML={{ __html: `${item.snippet.title} (${item.snippet.publishedAt.substring(0, 4)})` }}
+                    />
+            </a>
                 </div>
-                <h3 
-                    className="video__title" 
-                    dangerouslySetInnerHTML={{ __html: `${item.snippet.title} (${item.snippet.publishedAt.substring(0, 4)})` }}
-                />
-            </div>
         )
 
     })
